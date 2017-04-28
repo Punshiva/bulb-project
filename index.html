@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html ng-app="myCalculator">
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script type=text/javascript src="assets/angular.min.js"></script>
+		<script type="text/javascript" src="assets/calculator.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/calculator.css">
+        <link rel="stylesheet" href="../myCalculator/assets/otherCSS.css">
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Montserrat|Seymour+One" rel="stylesheet">
+		<title>Calculator</title>
+	</head>
+	<body>
+
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12 jumbotron">
+
+    <div class="mainHeading">Types Of Bulbs And Costs Per Year</div>
+
+    <!--</div>-->
+
+    <div id="myCalculator" ng-controller="CalculatorController">
+
+    <main>
+    <section class="inc">
+            <div>
+                <h4>Incandescent</h4>
+                <p>{{inc_wattage}}</p>
+                <p>{{inc_cost}}</p>
+
+        </div>
+    </section>
+    <section class="hal">
+        <div>
+        <h4>Halogen</h4>
+        <p>{{hal_wattage}}</p>
+        <p>{{hal_cost}}</p>
+    </div>
+    </section>
+    <section class="cfl">
+           <div>
+        <h4>CFL</h4>
+        <p>{{cfl_wattage}}</p>
+        <p>{{cfl_cost}}</p>
+    </div>
+        </section>
+    <section class="led">
+            <div>
+        <h4>LED</h4>
+        <p>{{led_wattage}}</p>
+        <p>{{led_cost}}</p>
+
+    </div>
+    </section>
+    </main>
+    <form>
+        <div>
+        <h4>Lumens</h4>
+        <p>Brightness<br>of bulb</p>
+            <select ng-change="calculate()" ng-model="current_lumens" ng-options="o as o for o in lumen_options">
+
+            </select>
+        </div>
+          <div>
+              <h4>kWh</h4>
+              <p>Kilowatt-<br>hour cost</p>
+              <input type="number" ng-change="calculate()" ng-model="current_cost" value="{{current_cost}}"> pence
+          </div>
+            <div>
+            <h4>Hours</h4>
+            <p>Usage <br>per day</p>
+              <input type="number" ng-change="calculate()" ng-model="current_hours"  value="{{current_hours}}">
+
+            </div>
+    </form>
+    </div>
+
+
+	<div class="textExplain">This tool will help you to calculate and convert results for you.The main purpose of this tool can also be used to calculate your energy savings from switching to efficient LED and CFL light bulbs.You can use the form controls above to set your own preference and choosing your suitable bulbs that you need.</div>
+        </div>
+    <script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                  crossorigin="anonymous"></script>
+	</body>
+</html>

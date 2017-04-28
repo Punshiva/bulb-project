@@ -1,0 +1,44 @@
+/*Other CSS*/
+
+body {
+    background-image: url(../img/lightBulbCover.jpg);
+    background-size: cover;
+}
+
+.mainHeading {
+    background-color: aqua !important;
+    text-align: center !important;
+    font-size: 2em !important;
+    padding: 30px 0 30px 0 !important;
+    margin: 20px 0 0 0 !important;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border: 0px solid #000000;
+    font-family:'Montserrat', san-serif;
+}
+
+.textExplain {
+    background-color: aqua !important;
+    text-align: left !important;
+    font-size: 1.2em !important;
+    padding: 30px 20px 30px 20px !important;
+    margin: 0 0 20px 0 !important;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    border: 0px solid #000000;
+    font-family: 'sans-serif';
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0 !important;
+    font: inherit;
+     color: black !important;
+}
+
+.jumbotron {
+    background-color: rgba(255,0,0, 0.5) !important;
+    margin: 10px 0 0 0;
+}
+
